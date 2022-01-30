@@ -19,7 +19,8 @@ pipeline {
     }
     stage('terraform') {
       steps {
-        sh './terraformw apply -auto-approve -no-color'
+        sh 'terraform version'
+        // sh './terraformw apply -auto-approve -no-color'
       }
     }
   }
